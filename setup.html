@@ -1,0 +1,156 @@
+<!DOCTYPE html5>
+<html lang="es_ES">
+    <head>
+        <meta name="description" content="hows the server setup">
+        <meta name="author" content="Rubén Bermejo Romero">
+        <meta name="keywords" content="technic shit">
+        <meta charset="UTF-8">
+        <title>Expliacación Servidor</title>
+        <link rel="icon" type="image/png" href="imgs/favicon.png">
+        <link rel="stylesheet" type="text/css" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            body {
+                background: url('imgs/setup-back.jpg') no-repeat top;
+                background-size: 100%;
+                background-attachment: fixed;
+                height: 100%;
+            }
+
+            .w3-bar {
+                position: fixed;
+                top: 0;
+                z-index: 1;
+            }
+
+            .title {
+                margin-top: 5%;
+            }
+
+            .card-content {
+                margin: 5%;
+            }
+
+            .footer {
+                position: fixed;
+                bottom: 0;
+                width: 100%
+            }
+
+            .imgmarg {
+                margin: px
+            }
+
+            .imgfooter {
+                font-size: 11px;
+                text-align: right;
+                font-style: italic;
+                margin-top: 5px
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="w3-bar w3-black">
+            <a href="index.html" class="w3-bar-item w3-button w3-green w3-hover-red w3-mobile"><i class="fa fa-angle-double-left"></i> Volver</a>
+        </div>
+
+        <div class="w3-card-2 w3-animate-bottom card-content">
+            <header class="w3-container w3-green w3-center">
+                <h2>¿CÓMO ESTÁ ESTO MONTADO?</h2>
+            </header>
+
+            <div class="w3-container w3-white">
+                <p>
+                    Entre que me hace ilu explicarlo, y que Dani me ha dicho que deje esto aquí escrito por si acaso, pues 
+                    voy a explicar un poco cómo está todo esto montado.
+                </p>
+                <br>
+                <h3>EL HARDWARE</h3>
+                <p>
+                    Es un equipo que literalmente, monté de piezas que fuí comprando de amigos a buen precio, más
+                    componentes nuevos que he ido poniéndole al equipo, y que ahora mismo está en mi salón encendido
+                    24/7, conectado al router por Ethernet.
+                </p>
+
+                <div class="w3-container imgcontainer">
+                    <img src="imgs/mi_server_y_yo.jpg" class="w3-half imgmarg" title="Mi server y yo">
+                    <img src="imgs/yo_y_mi_server.jpg" class="w3-half imgmarg" title="Yo y mi server">
+                    <p class="imgfooter">Yo y mis servidores.</p>
+                </div>
+
+                <p>Procedo ahora a detallar los componentes del equipo a fecha de hoy:</p>
+
+                <table class="w3-table-all w3-card-4 w3-centered w3-striped">
+                    <tr class="w3-green">
+                        <th>COMPONENTE</th>
+                        <th>NOMBRE</th>
+                    </tr>
+                    <tr>
+                        <td>CPU</td>
+                        <td>Intel Core 2 Quad Q6600 @ 2.40 GHz</td>
+                    </tr>
+                    <tr>
+                        <td>GPU</td>
+                        <td>Nvidia GeForce GTX 750 2GB GDDR5</td>
+                    </tr>
+                    <tr>
+                        <td>RAM</td>
+                        <td>8GB DDR2 @ 800 MHz</td>
+                    </tr>
+                    <tr>
+                        <td>PLACA BASE</td>
+                        <td>Gigabyte P35-DS3L</td>
+                    </tr>
+                    <tr>
+                        <td>DISCO(S) DURO(S)</td>
+                        <td>1 x 120GB SSD, 2 x 500GB HDD</td>
+                    </tr>
+                    <tr>
+                        <td>FUENTE DE ALIMENTACIÓN</td>
+                        <td>650W</td>
+                    </tr>
+                </table>
+                
+                <br>
+                <h3>EL SOFTWARE</h3>
+                
+                <p>
+                    Principalmente, todo esto funciona gracias a XAMPP, una distribución de Apache gratuita
+                    y fácil de usar, que además integra MySQL, PHP, FileZilla, entre otras cosas. Hay activos un
+                    Servidor Web (el que te permite leer este mismo texto), una base de datos MySQL, y un servidor
+                    FTP.
+                </p>
+
+                <p>
+                    Finalmente, este servidor, alojado en el equipo descrito previamente en la sección de Hardware, 
+                    se están redirigiendo los puertos pertinentes para el Servidor Web, y el servidor de Filezilla
+                    Server, y están accesibles desde la Internet pública.
+                </p>
+
+                <p>
+                    Se está utilizando también <a href="https://www.noip.com/">NO-IP</a> como servicio de DDNS.
+                    (Dynamic Domain Name System). Es un servicio gratuito de resolución de nombres (se creéis que yo tengo el dinero para pagar
+                    un dominio y un servicio de hosting) que permite acceder a esta web utilizando la URL que has utilizado para
+                    acceder aquí.
+                </p>
+
+                <p>Y la verdad, no hay mucho más que explicar, creo que he sido bastante claro.</p>
+                <br>
+                <p>Saludos</p>
+                <p>Rubén.</p>
+            </div>
+
+            <footer class="w3-container w3-green">
+                <p class="w3-right">28/05/2019</p>
+            </footer>
+        </div>
+
+        <footer class="w3-container w3-green footer w3-center">
+            <div class="w3-third w3-mobile"><p><a href="https://www.twitter.com/benchi99">© Rubén Bermejo Romero</a></p></div>
+            <div class="w3-third w3-mobile"><p><a href="https://www.w3schools.com/w3css/default.asp">Estilos gracias a w3.css</a></p></div>
+            <div class="w3-third w3-mobile"><p>2019</p></div>
+        </footer>
+        
+    </body>
+</html>
